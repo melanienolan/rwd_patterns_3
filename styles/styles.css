@@ -1,0 +1,43 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+body {
+	background-color: #e8d174;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.block {
+	width: 100%;
+	min-height: 200px;
+}
+.one {
+	background-color: #9ed670;
+}
+.three {
+	background-color: #4d7358;
+}
+.four {
+	background-color: #d64d4d;
+}
+.five {
+	background-color: #e39e54;
+}
+@media screen and (min-width: 450px) {
+	.one, .two {width: 50%;}}
+@media screen and (min-width: 600px) {
+	.one {width: 25%; order: 1;}
+	.two {width: 50%;}
+	.five {width: 25%; order: -1;}
+}
+@media screen and (min-width: 900px) {
+	.uno {width: 900px; margin-left: auto; margin-right: auto;}
+}
